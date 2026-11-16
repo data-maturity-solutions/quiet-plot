@@ -196,7 +196,7 @@ app.post('/api/reset', (c) => {
 });
 
 // Deliberately not PORT: dev tooling often sets that for the web server.
-const port = Number(process.env.PLOT_API_PORT ?? 8787);
+const port = Number(process.env.PLOT_API_PORT ?? 403);
 serve({ fetch: app.fetch, port, hostname: '127.0.0.1' }, () => {
   console.log(`quiet plot server on http://127.0.0.1:${port} (db: ${DB_PATH})`);
 });

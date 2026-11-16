@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite';
 
+const webPort = Number(process.env.PLOT_WEB_PORT ?? 2311);
+const apiPort = Number(process.env.PLOT_API_PORT ?? 403);
+
 export default defineConfig({
   server: {
-    port: 5173,
+    port: webPort,
     strictPort: true,
-    proxy: { '/api': `http://127.0.0.1:${process.env.PLOT_API_PORT ?? 8787}` },
+    proxy: { '/api': `http://127.0.0.1:${apiPort}` },
   },
 });

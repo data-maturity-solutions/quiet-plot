@@ -5,7 +5,7 @@
       "name": "quiet-plot",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["run", "dev"],
-      "port": 5173
+      "port": 2311
     }
   ]
 }

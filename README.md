@@ -15,8 +15,9 @@ pnpm install
 pnpm dev
 ```
 
-Then open http://localhost:5173. The API runs on http://127.0.0.1:8787 (override with
-`PLOT_API_PORT`). Data lives in `data/plot.db` (override with `PLOT_DB`).
+Then open http://localhost:2311. The API runs on http://127.0.0.1:403. Override the ports with
+`PLOT_WEB_PORT` and `PLOT_API_PORT`. On Linux, ports below 1024 need extra permissions, so set
+`PLOT_API_PORT` to something higher there. Data lives in `data/plot.db` (override with `PLOT_DB`).
 
 Use the **dev clock** in the header to skip days and watch plants dry out, personas get
 stretched or quiet, and scenes appear.
